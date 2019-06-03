@@ -1,0 +1,25 @@
+{
+   "type": "mysql",
+   "host": "localhost",
+   "port": 3306,
+   "username": "OrderTest",
+   "password": "123456",
+   "database": "OrderExample",
+   "synchronize": true,
+   "logging": false,
+   "supportBigNumbers": true,
+   "entities": [
+      "dao/entity/**/*.ts"
+   ],
+   "migrations": [
+      "dao/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "dao/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "dao/entity",
+      "migrationsDir": "dao/migration",
+      "subscribersDir": "dao/subscriber"
+   }
+}
